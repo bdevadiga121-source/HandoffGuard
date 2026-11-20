@@ -1,0 +1,23 @@
+{
+  "patient": {"id": "P-001", "name": "Demo Patient (synthetic)"},
+  "handover": {
+    "written_at": "2026-11-20T11:05",
+    "from": "ICU",
+    "to": "Ward 3",
+    "note": "Penicillin allergy. CBC pending. Vancomycin 1 g q12h. Repeat troponin at 18:00."
+  },
+  "records": {
+    "labs": [
+      {"id": "LAB-1001", "test": "CBC", "status": "final", "resulted_at": "2026-11-20T14:32", "value": "Hb 9.1 g/dL"}
+    ],
+    "allergies": [
+      {"id": "ALG-1", "substance": "Penicillin", "recorded_at": "2026-11-20T09:10", "source": "Triage"}
+    ],
+    "medications": [
+      {"id": "MED-1", "drug": "Vancomycin", "dose_mg": 750, "frequency": "q12h", "source": "Medication record"}
+    ],
+    "tasks": [
+      {"id": "T-1", "task": "Repeat troponin", "due": "18:00", "owner": "Night RN", "ack": "unseen"}
+    ]
+  }
+}
